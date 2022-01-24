@@ -46,3 +46,9 @@ line-height: 75px;
 .active{/* lägger till understreck när man är på relevant sida*/
     border-bottom: 1px solid #3a3a3a;
 }
+#hero-image{/* lägger till en bild .. betyder två stegg bak och sedan absolut sök vägg till images. bilden repeteras inte och flyttas till mitten två gånger. bildens övredel göms undan*/
+    height: 600px;
+    width:100%;
+    background: url('../images/hero-image.webp') no-repeat center center;
+    overflow: hidden;
+}
