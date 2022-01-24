@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');/* hämtar url från google fonts*/
 
 *{
-    margin: 0;
+    margin: 0; /* ta bort stadard värde stjärnanr väljer alla element*/
     padding: 0;
     border: none;
 }
@@ -11,13 +11,38 @@ body{
     font-weight: 300;
     color: #3a3a3a;
 }
-h1,h2{
+h1,h2{ /* mellanslang mella nvarjre bokstav på båda elementera*/
     font-family: oswald,sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
 }
+#menu, #logo{ /*  väljer båda klasserna med komma tecken, samt bestämemr linjehöljden*/
+line-height: 75px;
+
+}
+
 #logo{
     float: left;
-    font-size: 280%;
+    font-size: 280%g;
+}
+#menu{
+    font-size: 110%;
+    letter-spacing: 4px;
+  
+}
+#menu li{ /* flyttar alla li element i menu id klassen till höger och tar bort punkterna samt gör mellanslag mellan varje ord*/
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+#menu a{ /* tar bprt understreck samt ärver färgen ifrån närmaste föräldern*/
+    text-decoration: none;
+    color: inherit;
+}
+#menu a:hover{/* i menu klassen så blir alla a element understrkta när musen är över dom*/
+    border-bottom: 1px solid #3a3a3a;
+}
+.active{/* lägger till understreck när man är på relevant sida*/
+    border-bottom: 1px solid #3a3a3a;
 }
