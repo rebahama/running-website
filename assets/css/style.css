@@ -50,7 +50,11 @@ line-height: 75px;
     height: 600px;
     width:100%;
     overflow: hidden;
+    position: relative;
     
+}
+#cover-text,h2{
+color:#fff;
 }
 #hero-image{/* lägger till en bild .. betyder två stegg bak och sedan absolut sök vägg till images. bilden repeteras inte och flyttas till mitten två gånger. bildens övredel göms undan*/
     height: 500px;
@@ -58,12 +62,12 @@ line-height: 75px;
     background: url('../images/hero-image.webp') no-repeat center center;
     overflow: hidden;
 
-    animation-name: hero-zoom;
+    animation-name: hero-zoom;  /* skapa ett namn för animering*/
     animation-duration: 5s;
     animation-fill-mode: forwards;
 
 }
-@keyframes hero-zoom{
+@keyframes hero-zoom{ /* själva animeringen sker här*/
     from{
 transform: scale(1);
     }
@@ -72,4 +76,18 @@ transform: scale(1.1);
 }
 
 
+}
+#cover-text{
+    font-size: 130%;
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: rgba(241, 109, 107, .7);
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
 }
