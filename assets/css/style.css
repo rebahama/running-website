@@ -247,6 +247,28 @@ hr{
     margin-bottom: 30px;
     line-height: 25px;
 }
+#cover-text{
+    left: 0;
+}
+#club-ethos{
+    width: 90%;
+    height: 1200px;
+    margin: o auto;
+}
+.left-about-heading,.right-about-heading{
+
+    width: inherit;
+}
+.left-about-heading h2,.right-about-heading h2{
+    text-align: center;
+    width: 100%;
+}
+.left-about-heading p,.right-about-heading p{
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+    
 
 
 }
