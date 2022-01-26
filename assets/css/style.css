@@ -235,7 +235,18 @@ margin: 0 auto;
 hr{
     display: none;
 }
+}
 
+/* for media screen below 950 px*/
+@media screen and (max-width: 950px){
+
+#menu{
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
 
 
 }
