@@ -232,6 +232,12 @@ margin: 0 auto;
     float: left;
     padding: 0;
 }
+#times>div{
+    width: 100%;
+    clear: both;
+    height: 150px;
+    padding: 0;
+}
 hr{
     display: none;
 }
@@ -267,6 +273,16 @@ hr{
     text-align: center;
     width: 100%;
     padding: 0 20px;
+}
+#photos{
+    column-count: 3;
+}
+@media screen and (max-width: 800px){
+
+    #photos{
+        column-count: 2;
+    }
+
 }
     
 
